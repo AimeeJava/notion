@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <section id="post">
+      <form id="post-form" action="">
+        <div id="textare">
+          <label for="in">Enter your post: </label>
+          <textarea id="in" type="text" name="text"></textarea>
+        </div>
+        <button type="button" id="save-btn">Save</button>
+        <button type="button" id="load-latest-btn">Load Latest</button>
+        <button type="button" id="copy-share-link-btn" disabled>
+          Copy Share Link
+        </button>
+      </form>
+      <hr id="horizontal" />
+    </section>
+    <!--A section to show the live preview as a paragraph.-->
+    <section id="preview">
+      <div id="preview-area">
+        <h1>Preview:</h1>
+        <div id="preview-out"></div>
+      </div>
+    </section>
+    <p id="save-status"></p>
+    <script src="js/editor.js"></script>
+  </body>
+</html>
